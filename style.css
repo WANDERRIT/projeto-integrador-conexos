@@ -44,63 +44,136 @@ header ul li a:hover{
 }
 
 /* carrossel */
+.bg-carrossel{
+    background-color: white;
+}
 
-.texto-carrossel{
-    display: flex;
-    justify-content: baseline;
-    align-items: baseline;
-    padding: 20px;
-    margin-left: 70px;
-    font-weight:900;
-    color: #0BEAEA;
-    font-size: 30px;
+.img-teste{
+    Width:550px;
+    Height:361px;
+    }
+
+.carousel-inner h2{
     font-weight: bold;
-    text-shadow: 0 0 3px #6405fd, 0 0 5px #10b5e2;
+    color:#0BEAEA;
+    padding:  10px;
+    text-shadow: 2px 2px #00000061;
+    
+
 }
-
-
-
-.texto-carrossel2{
-    display: flex;
-    justify-content:center; 
-    align-items: end;
-    padding: 0px;
-    font-size: 20px;
-    font-weight: bold; 
-    margin-left: 90px;
+.carousel-inner p{
+    font-weight: bold;
     color: #000000;
-    text-shadow: 0 0 3px #FFFB03, 0 0 5px #000000;
-
-}
-
-/* .texto-carrossel2 p{
-    font-weight: bold; 
-    margin-left: 80px;
-} */
-
-.img-carrossel{
-    background-image: url(img/corrossel-img1.png);
-    width: 40%;
-    height: 390px;
-    background-size: cover;
-    background-position: center;
-    margin-left: 50px;
-    text-align: center;
+    padding:  10px;
+    text-shadow: 2px 2px #00000061;
     
 }
-.img-carrossel2{
-    background-image: url(img/carrossel-img2.png);
-    width: 40%;
-    height: 390px;
-    background-size: cover;
-    background-position: center;
-    margin-left: 50px;
+ 
+/* CSS FORM TESTE */
+/* .oo{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid #0BEAEA;;
+    border-radius: 20px;
+    margin: 0 30px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 10px 0px 10px 0px;
+
 }
-.img-carrossel3{
-    background-image: url(img/carrossel-img3.png);
-    width: 40%;
-    height: 390px;
-    background-size: cover;
-    background-position: center;
-    margin-left: 50px;
+.oo h4{
+    text-align: center;
+    color: #0BEAEA;
+    font-weight: bold;
+}
+.oo button{
+    background-color: #0BEAEA;
+    border-radius: 7px;
+    font-weight: bold;
+    color:rgb(255, 255, 255) ;
+}
+
+.oo h5{
+    font-weight: bold;
+}
+
+form input{
+padding: 10px;
+margin: 10px;
+}
+form button{
+    margin: 10px;
+}
+
+form select{
+padding: 10px;
+margin: 10px;
+}
+.ii{
+    width: auto;
+    
+}
+.uu{
+    width: 300px;
+    margin-left: 20%;
+}
+.uu img{
+width: 500px;
+
+}
+.yy{
+    display: flex;
+} */
+
+/* FOOTER */
+footer{
+    padding: 20px;
+    background-color: #0BEAEA;
+}
+.div-footer{
+    padding: 20px;
+    display: flex;
+     
+     justify-content: space-between;
+     background-color: #0BEAEA;
+     height: 95px;
+}
+
+.footer-A{
+    color: #000000;
+    font-weight: bold;
+ }
+
+ .logo-footer{
+    width: 180px;
+    height: 165px;
+    padding: 30px;
+ }
+ .container h5{
+    padding: 40px;
+    color: #ffffff;
+    font-weight: bold;
+ }
+ .container ul{
+    padding: 40px;
+ }
+ .container ul li a{
+    color: #ffffff;
+    
+ }
+ .container ul li {
+    padding: 10px;
+    
+ }
+
+ #footer-desc{
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    border-top: 2px solid white;
+    width: 100%;
+ }
+ footer ul li a:hover{
+    color: #FFFB03;
+    text-decoration: none;
 }
