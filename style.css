@@ -1,0 +1,106 @@
+                                /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;
+}
+                                /* padding e margin de toda a página */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+ .header-conexos {
+     display: flex;
+     padding: 20px;
+     justify-content: space-between;
+     background-color: #0BEAEA;
+     height: 95px;
+ }
+ #logo-branco{
+    width: 100px;
+    height: 70px;
+ }
+ .header-A{
+    color: #ffffff;
+    font-weight: bold;
+ }
+
+ul {
+list-style: none;}
+
+a{
+text-decoration: none;}
+
+header ul{
+display: flex;}
+
+header ul li{
+    padding: 15px;}
+    
+header ul li a:hover{
+        color: #FFFB03;
+        text-decoration: none;
+}
+
+/* carrossel */
+
+.texto-carrossel{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    padding: 20px;
+    margin-left: 70px;
+    font-weight:900;
+    color: #0BEAEA;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #6405fd, 0 0 5px #10b5e2;
+}
+
+
+
+.texto-carrossel2{
+    display: flex;
+    justify-content:center; 
+    align-items: end;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold; 
+    margin-left: 90px;
+    color: #000000;
+    text-shadow: 0 0 3px #FFFB03, 0 0 5px #000000;
+
+}
+
+/* .texto-carrossel2 p{
+    font-weight: bold; 
+    margin-left: 80px;
+} */
+
+.img-carrossel{
+    background-image: url(img/corrossel-img1.png);
+    width: 40%;
+    height: 390px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 50px;
+    text-align: center;
+    
+}
+.img-carrossel2{
+    background-image: url(img/carrossel-img2.png);
+    width: 40%;
+    height: 390px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 50px;
+}
+.img-carrossel3{
+    background-image: url(img/carrossel-img3.png);
+    width: 40%;
+    height: 390px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 50px;
+}
