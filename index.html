@@ -117,15 +117,15 @@
 
   <!-- conteúdo principal -->
   <main>
-    <section class="planos">
+    <section class="planos-section">
         <div class="container">
             <div class="titulo">
-                <h2>Conheça nossos planos</h2>
+                <h5>VENHA CONHECER NOSSOS PLANOS</h5>
             </div>
             <div class="planos">
                 <article>
                     <h3>Plano 1</h3>
-                    <div class="thumb" style="background-image: url(imagens/plano1.png);"></div>
+                    <div><img class="thumb" src="/imagens/plano1.png" alt=""></div>
                     <br>
                     <p>Plano ideal para espaços
                     residenciais com pequenas
@@ -135,28 +135,29 @@
                     <li>vantagem</li>
                     <br>
                     <h3>R$ 00,00</h3>
-                    <a href="">Escolher plano</a>
+                    <a href=""><button>Escolher Plano</button></a>
                 </article>
 
                 <article>
                     <h3>Plano 2</h3>
-                    <div class="thumb" style="background-image: url(imagens/plano2.png);"></div>
+                    <div><img class="thumb" src="imagens/plano2.png" alt=""></div>
                     <br>
                     <p>Plano ideal para espaços 
                     residenciais com grandes
                     familias ou startups
                     </p>
+                    
                     <li>vantagem</li>
                     <li>vantagem</li>
                     <li>vantagem</li>
                     <br>
                     <h3>R$ 00,00</h3>
-                    <a href="">Escolher plano</a>
+                    <a href=""><button>Escolher Plano</button></a>
                 </article>
 
                 <article>
                     <h3>Plano 3</h3>
-                    <div class="thumb" style="background-image: url(imagens/plano3.png);"></div>    
+                    <div> <img class="thumb" src="imagens/plano3.png" alt=""></div>    
                     <br>
                     <p>Plano ideal para espaços empresariais</p>
                     <br>
@@ -165,23 +166,26 @@
                     <li>vantagem</li>
                     <br>
                     <h3>R$ 00,00</h3>
-                    <a href="">Escolher plano</a>
+                    <a href=""><button>Escolher Plano</button></a>
                 </article>
             </div>
 
         </div>
+      </section>
     <!--código do forms-->
-    <div class="container">
+    <div class="container container-forms">
+      
       <div class="row">
-        <div class="col">
+        <div class="col col-forms">
+    <h4>contrate nossos planos</h4>
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Nome Completo</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu Nome Completo">
+              <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Seu Nome Completo">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">CPF</label>
-              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
+              <input type="number" class="form-control" id="exampleInputPassword2" placeholder="CPF">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Telefone para Contato</label>
@@ -194,7 +198,7 @@
             </div>
               <div class="form-group ">
                 <label for="inputEstado">Plano</label>
-                <select id="inputEstado" class="form-control">
+                <select id="inputPlano" class="form-control">
                   <option selected>Plano 1</option>
                   <option>Plano 2</option>
                   <option>Plano 3</option>
