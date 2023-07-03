@@ -1,0 +1,273 @@
+                                /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;
+}
+                                /* padding e margin de toda a página */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ /* Header */
+ .header-conexos {
+     display: flex;
+     padding: 20px;
+     justify-content: space-between;
+     background-color: #0BEAEA;
+     height: 95px;
+ }
+ #logo-branco{
+    width: 100px;
+    height: 70px;
+ }
+
+ #logo-branco:hover{
+    padding: 2px;
+    transition: 300ms;
+
+ }
+
+ .header-A{
+    color: #ffffff;
+    font-weight: bold;
+ }
+
+ul {
+list-style: none;}
+
+a{
+text-decoration: none;}
+
+header ul{
+display: flex;}
+
+header ul li{
+    padding: 15px;}
+    
+header ul li a:hover{
+        color: #FFFB03;
+        text-decoration: none;
+}
+
+
+
+/* carrossel */
+.bg-carrossel{
+    background-color: white;
+}
+
+.img-teste{
+    Width:550px;
+    Height:361px;
+    }
+
+.carousel-inner h2{
+    font-weight: bold;
+    color:#0BEAEA;
+    padding:  10px;
+    text-shadow: 2px 2px #00000061;
+    
+
+}
+.carousel-inner p{
+    font-weight: bold;
+    color: #000000;
+    padding:  10px;
+    text-shadow: 2px 2px #00000061;
+    
+}
+
+
+
+/* FOOTER */
+footer{
+    padding: 20px;
+    background-color: #0BEAEA;
+}
+
+.img-carrossel3{
+    background-image: url(img/carrossel-img3.png);
+    width: 40%;
+    height: 390px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 50px;
+}
+
+
+.div-footer{
+    padding: 20px;
+    display: flex;
+     
+     justify-content: space-between;
+     background-color: #0BEAEA;
+     height: 95px;
+}
+
+.footer-A{
+    color: #000000;
+    font-weight: bold;
+ }
+
+ .logo-footer{
+    width: 140px;
+    height: 120px;
+    padding: 10px;
+ }
+ .container h5{
+    padding: 40px;
+    color: #ffffff;
+    font-weight: bold;
+ }
+ .container ul{
+    padding: 20px;
+ }
+ .container ul li a{
+    color: #ffffff;
+    
+ }
+ .container ul li {
+    padding: 10px;
+    
+ }
+
+ #footer-desc{
+    text-align: center;
+    color: #ffffff;
+    border-top: 2px solid white;
+    width: 100%;
+ }
+ footer ul li a:hover{
+    color: #FFFB03;
+    text-decoration: none;
+}
+
+
+/* status de solicitação */
+.section-status{
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(115, 238, 238) 100%);
+    
+}
+
+.section-status h2{
+font-weight: 900;
+}
+
+.section-status h4{
+    font-weight: 900;
+    }
+section.section-status div.container{
+    margin-top: 20px ;
+}
+section.section-status div.container img{
+    margin-top: 20px ;
+}
+section.section-status div.container a button{
+    margin-top: 20px ;
+    padding: 4px ;
+    border-radius: 7px;
+    width: 50%;
+    font-weight: bold;
+    background-color: #0BEAEA;
+color: #ffffff;
+border: 1px solid #ffffff;}
+
+
+section.section-status div.container a button:hover{
+    margin: 2px;
+    box-shadow: 0px 8px 8px 0px #000000;
+    transition: 400ms;
+
+    }
+
+    .planos article p {
+        font-size: 16px;
+    }
+    
+    main section.planos .container {
+        min-height: 600px;
+        width: 1200px;
+        max-width: 100%;
+        /* largura */
+        margin: 0 auto;
+        /* espaçamento automatico para centralizar o container */
+        padding: 0 15px;
+    }
+    
+    main section.planos h2 {
+        color: #0BEAEA;
+        text-align: center;
+        font-weight: bold;
+        /* grossura da letra */
+        font-size: 55px;
+        /* tamanho da letra */
+        margin: 40px;
+    }
+    
+    .planos {
+        display: flex;
+        /* ativando flexbox */
+        justify-content: space-between;
+        /* espaçamento igual ao redor dos elementos (horizontal) */
+        align-items: flex-start;
+        /* todos os elementos alinhados ao topo */
+        flex-wrap: wrap;
+        /* permite que aconteça a quebra de linha */
+    }
+    
+    .planos article {
+        /* border: 1px solid orange; */
+        /* borda somente para teste */
+        width: 345px;
+        /* largura do article */
+        text-align: center;
+        /* centralizando tudo no article */
+        margin-bottom: 60px;
+        /* espaçamento inferior */
+        border-radius: 10px;
+        box-shadow: 10px 0px 10px 0px;
+        border: 1px solid #0BEAEA;;
+        padding: 9px 25px;
+    }
+    
+    .planos article .thumb {
+        width: 100%;
+        /* imagem vai ocupar 100% de largura do article */
+        height: 280px;
+        /* altura do thumb */
+        background-color: #0BEAEA;
+        /* cor de fundo somente para teste */
+        background-size: cover;
+        /* imagem cobre todo o elemento */
+        background-repeat: no-repeat;
+        /* imagem não se repete */
+        background-position: center;
+        /* imagem centralizada */
+        border-radius: 50px;
+        
+    
+    }
+    
+    .planos article h3 {
+        font-size: 26px;
+        color: #0BEAEA;
+    }
+    
+    .planos article a {
+        background-color: #0BEAEA;
+        /* cor de fundo */
+        color: #FFF;
+        /* cor do texto */
+        font-size: 20px;
+        /* tamanho da letra */
+        font-weight: bold;
+        /* grossura da letra */
+        padding: 0px 15px;
+        /* espaçamento interno do botão */
+        text-decoration: none;
+        /* tirar sublinhado do link */
+        border-radius: 15px;
+        
+    }
