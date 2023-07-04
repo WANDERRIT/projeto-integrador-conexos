@@ -271,3 +271,30 @@ section.section-status div.container a button:hover{
         border-radius: 15px;
         
     }
+
+    .container-planos {
+        width: 1200px;
+        max-width: 100%;
+        margin: 50px auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .planos main {
+        width: 700px;
+        max-width: 100%;
+        padding-right: 50px;
+    }
+    
+    small.tag {
+        display: inline-block;
+        border: 1px solid #176902;
+        border-radius: 47px;
+        /* bordas arredondadas */
+        color: #176902;
+        padding: 5px 10px;
+        margin: 10px 0;
+    }
+    
