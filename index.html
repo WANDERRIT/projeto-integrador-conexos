@@ -12,7 +12,7 @@
 
 <body>
   <!-- Header -->
-  <header class="header-conexos ">
+  <header class="header-conexos">
     <div>
       <a href="#"><img id="logo-branco" src="img/conexos-logo-white (4) 1.png" alt="logo branco"></a>
     </div>
@@ -26,7 +26,7 @@
       </li>
 
       <li>
-        <a class="header-A" target="_blank" href="#">Status de
+        <a class="header-A" target="_blank" href="/pagina-status.html">Status de
           solicitções</a>
       </li>
     </ul>
@@ -117,18 +117,75 @@
 
   <!-- conteúdo principal -->
   <main>
+    <section class="planos-section">
+        <div class="container">
+            <div class="titulo">
+                <h5>VENHA CONHECER NOSSOS PLANOS</h5>
+            </div>
+            <div class="planos">
+                <article>
+                    <h3>Plano 1</h3>
+                    <div><img class="thumb" src="/imagens/plano1.png" alt=""></div>
+                    <br>
+                    <p>Plano ideal para espaços
+                    residenciais com pequenas
+                    familias</p>
+                    <li>vantagem</li>
+                    <li>vantagem</li>
+                    <li>vantagem</li>
+                    <br>
+                    <h3>R$ 00,00</h3>
+                    <a href="pagina-planos.html">Escolher plano</a>
+                </article>
+
+                <article>
+                    <h3>Plano 2</h3>
+                    <div><img class="thumb" src="imagens/plano2.png" alt=""></div>
+                    <br>
+                    <p>Plano ideal para espaços 
+                    residenciais com grandes
+                    familias ou startups
+                    </p>
+                    
+                    <li>vantagem</li>
+                    <li>vantagem</li>
+                    <li>vantagem</li>
+                    <br>
+                    <h3>R$ 00,00</h3>
+                    <a href="pagina-planos.html">Escolher plano</a>
+                </article>
+
+                <article>
+                    <h3>Plano 3</h3>
+                    <div> <img class="thumb" src="imagens/plano3.png" alt=""></div>    
+                    <br>
+                    <p>Plano ideal para espaços empresariais</p>
+                    <br>
+                    <li>vantagem</li>
+                    <li>vantagem</li>
+                    <li>vantagem</li>
+                    <br>
+                    <h3>R$ 00,00</h3>
+                    <a href="pagina-planos.html">Escolher plano</a>
+                </article>
+            </div>
+
+        </div>
+      </section>
     <!--código do forms-->
-    <div class="container">
+    <div class="container container-forms">
+      
       <div class="row">
-        <div class="col">
+        <div class="col-6 col-forms ">
+         <h4>contrate nossos planos</h4>
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Nome Completo</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu Nome Completo">
+              <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Seu Nome Completo">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">CPF</label>
-              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
+              <input type="number" class="form-control" id="exampleInputPassword2" placeholder="CPF">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Telefone para Contato</label>
@@ -141,7 +198,7 @@
             </div>
               <div class="form-group ">
                 <label for="inputEstado">Plano</label>
-                <select id="inputEstado" class="form-control">
+                <select id="inputPlano" class="form-control">
                   <option selected>Plano 1</option>
                   <option>Plano 2</option>
                   <option>Plano 3</option>
@@ -150,23 +207,26 @@
               <div class="form-group ">
                 <label for="inputEstado">Preferência de horário para visita técnica</label>
                 <select id="inputEstado" class="form-control">
-                  <option selected>8:00 ás 12:00</option>
-                  <option>14:00 até 18:00</option>
+                  <option selected>8:00 às 12:00</option>
+                  <option>14:00 às 18:00</option>
                 </select>
               </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
-        <div class="col">
-          <img class="img-teste" src="img/ilustra_contrato.png" alt="ilustra_contrato">
+        <div class="col-3">
+          
+        </div>
+        <div class="col-3 container nn">
+          <img  src="img/ilustra_contrato.png" alt="ilustra_contrato">
         </div>
       </div>
-  </div>
+      </div>
   
   
-    <!-- Status de Solicitações ANA BEATRIZ -->
+      <!-- Status de Solicitações ANA BEATRIZ -->
 
-    <section class=" section-status">
+      <section class=" section-status">
       <div class="container banner-status">
         <div class="row">
           <div class="col-sm">
@@ -247,4 +307,5 @@
 </body>
 
 </html>
+
 

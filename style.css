@@ -9,12 +9,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+
  /* Header */
  .header-conexos {
      display: flex;
      padding: 20px;
      justify-content: space-between;
      background-color: #0BEAEA;
+     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,105,1) 47%, rgba(0,212,255,1) 100%); */
+     /* background: radial-gradient(circle, rgba(70,229,252,1) 0%, rgba(63,94,251,1) 100%); */
+
      height: 95px;
  }
  #logo-branco{
@@ -67,14 +71,14 @@ header ul li a:hover{
     color:#0BEAEA;
     padding:  10px;
     text-shadow: 2px 2px #00000061;
-    
+    font-family: 'Raleway', sans-serif;
 
 }
 .carousel-inner p{
     font-weight: bold;
     color: #000000;
     padding:  10px;
-    text-shadow: 2px 2px #00000061;
+    /* text-shadow: 2px 2px #00000061; */
     
 }
 
@@ -119,16 +123,17 @@ footer{
     padding: 40px;
     color: #ffffff;
     font-weight: bold;
+    font-size: 15px;
  }
  .container ul{
-    padding: 20px;
+    padding: 0px;
  }
  .container ul li a{
     color: #ffffff;
     
  }
  .container ul li {
-    padding: 10px;
+    padding: 5px;
     
  }
 
@@ -147,7 +152,7 @@ footer{
 /* status de solicitação */
 .section-status{
     padding: 20px;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(115, 238, 238) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(146, 241, 241) 100%);
     
 }
 
@@ -182,3 +187,253 @@ section.section-status div.container a button:hover{
     
     }
 
+    /* Cards */
+
+    
+section.planos-section{
+padding: 60px;
+margin: 20px;
+    }
+
+main section.planos-section .container {
+  min-height: 600px;
+     width: 1200px;
+     max-width: 100%;
+     /* largura */
+    margin: 0 auto;
+    /* espaçamento automatico para centralizar o container */
+    padding: 0 15px;
+    }
+    
+    main section.planos-section h5 {
+        color: #0BEAEA;
+        text-align: center;
+        /* grossura da letra */
+        font-weight: bold;
+        font-size: 35px;
+        /* tamanho da letra */
+        font-family: 'Raleway', sans-serif;
+    }
+
+    
+    .planos {
+        display: flex;
+        /* ativando flexbox */
+        justify-content: space-between;
+        /* espaçamento igual ao redor dos elementos (horizontal) */
+        align-items: flex-start;
+        /* todos os elementos alinhados ao topo */
+        flex-wrap: wrap;
+        /* permite que aconteça a quebra de linha */
+        padding: 60px;
+    }
+    
+    .planos article {
+        /* largura do article */
+        width: 260px;
+        /* centralizando tudo no article */
+        
+        /* espaçamento inferior */
+        margin-bottom: 60px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px #ccd9d9;
+        
+        padding: 40px;
+    }
+    div.planos article:hover{
+        margin: 2px;
+        box-shadow: 0px 8px 8px 0px #000000;
+        transition: 400ms;
+        border: 1.5px solid #0BEAEA;;
+    }
+
+    .planos article .thumb {
+        /* imagem vai ocupar 100% de largura do article */
+        width: 100%;
+        /* altura do thumb */
+        height: 150px;
+        /* cor de fundo somente para teste */
+       background-size: cover;
+        display: flex;
+    }
+    
+    .planos article h3 {
+        font-size: 26px;
+        color: #0BEAEA;
+        margin: 15px;
+        padding: 12px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+    }
+    .planos article p{
+        font-weight: bold;
+    }
+
+    .planos article li{
+        font-weight: bold;
+    }
+    
+    .planos article a{
+        display: flex;
+       justify-content: center;
+       text-decoration: none;
+      
+    }
+    .planos article a button {
+        background-color: #0BEAEA;
+        /* cor de fundo */
+        color: #FFF;
+        /* cor do texto */
+        font-size: 20px;
+        /* tamanho da letra */
+        font-weight: bold;
+        /* grossura da letra */
+        padding: 0px 15px;
+        /* espaçamento interno do botão */
+        text-decoration: none;
+        /* tirar sublinhado do link */
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .container-planos {
+        width: 1200px;
+        max-width: 100%;
+        margin: 50px auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .planos main {
+        width: 700px;
+        max-width: 100%;
+        padding-right: 50px;
+    }
+    
+    small.tag {
+        display: inline-block;
+        border: 1px solid #176902;
+        border-radius: 47px;
+        /* bordas arredondadas */
+        color: #176902;
+        padding: 5px 10px;
+        margin: 10px 0;
+    }
+    
+    div.planos h3{
+        display: flex;
+        justify-content: center; 
+    }
+
+    /* Forms */
+
+    .container-forms{
+        padding: 20px;
+        margin: 90px;
+        width: 700px;
+        margin-top: -90px;
+    }
+
+    div.container-forms img{
+        width: 450px;
+        height: 350px;
+     
+    }
+
+    div.container-forms div.col-forms{
+        padding: 50px;
+        border: 2px solid;
+        border-radius: 15px;
+        margin-right: 0px; 
+    }
+/* PÁGINA STATUS DE SOLICITAÇÃO */
+.section-status-pg{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+.div-status-pg{
+    width: 500px;
+    height: 300px;
+}
+
+#titulo-status-pg{
+    padding: 15px;
+    margin-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #0BEAEA;
+}
+
+.texto-status-pg{
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Form da página */
+.div-stauts-pg2{
+    border: 2px solid #0BEAEA;
+    padding: 30px;
+    display: flex;
+    margin: 20px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 4px #dacbcb;
+    
+}
+
+.div-stauts-pg2 form{
+width: 100%;
+height: 100%;
+margin: 20px;
+}
+.div-stauts-pg2 form input{
+    border-radius: 5px;
+    border: 1px solid #0BEAEA;
+}
+
+.div-stauts-pg2 form label{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.div-stauts-pg2 form a{
+    width: 100%;
+}
+
+.div-stauts-pg2 form a button{
+    width: 100%;
+    margin-top: 28px;
+    font-weight: bold;
+    background-color: #0BEAEA;
+    color: #FFF;
+}
+.div-stauts-pg2 form a button:hover{
+    background-color: #067272; 
+}
+
+/* PG STATUS-INFO */
+#num-solicitacao{
+    margin-top: 30px;
+    background-color: #c8c1c1;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #726d6d ;
+    display: none;
+}
+
+#num-solicitacao h4{
+    font-weight: bold;
+    color: #000000;
+}
+#num-solicitacao p{
+    font-weight: bold;
+    color: #000000;
+}
