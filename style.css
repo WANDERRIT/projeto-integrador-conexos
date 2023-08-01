@@ -64,7 +64,7 @@ header ul li a:hover{
 
 .carousel-inner h2{
     font-weight: bold;
-    color:#0BEAEA;
+    color:#07caca;
     padding:  10px;
     text-shadow: 2px 2px #00000061;
     font-family: 'Raleway', sans-serif;
@@ -86,7 +86,7 @@ header ul li a:hover{
 }
 
 .img-bg-carrossel{
-    background-image: url(img/plano-familia.png);
+    background-image: url(img/plano-familia.webp);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@ header ul li a:hover{
 }
 
 .img-bg-corrossel2{
-    background-image: url(img/entrepreneur-593359_1280.jpg);
+    background-image: url(img/plano-prime.webp);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@ header ul li a:hover{
     width: 100%;
 }
 .img-bg-corrossel3{
-    background-image: url(img/plano-infinity.jpg);
+    background-image: url(img/plano-infinity.webp);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ footer{
     display: flex;
      
      justify-content: space-between;
-     background-color: #0BEAEA;
+     background-color: #048181;
      height: 95px;
 }
 
@@ -185,7 +185,7 @@ footer ul li{
 /* status de solicitação */
 .section-status{
     padding: 20px;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(146, 176, 241) 100%);
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(146, 176, 241) 100%); */
     
 }
 
@@ -208,7 +208,7 @@ section.section-status div.container a button{
     border-radius: 7px;
     width: 50%;
     font-weight: bold;
-    background-color: #0BEAEA;
+    background-color: #059292;
 color: #ffffff;
 border: 1px solid #ffffff;}
 
@@ -239,7 +239,7 @@ main section.planos-section .container {
     }
     
     main section.planos-section h5 {
-        color: #0BEAEA;
+        color: #048181;
         text-align: center;
         /* grossura da letra */
         font-weight: bold;
@@ -276,7 +276,7 @@ main section.planos-section .container {
        
         box-shadow: 0px 8px 8px 0px #000000;
         transition: 400ms;
-        border: 2px solid #0BEAEA;
+        border: 2px solid #0bc1c1;
     }
 
     .planos article .thumb {
@@ -293,7 +293,7 @@ main section.planos-section .container {
 
     .planos article h3 {
         font-size: 26px;
-        color: #0BEAEA;
+        color: #048181;
         margin: 15px;
         padding: 12px;
         font-family: 'Raleway', sans-serif;
@@ -314,7 +314,7 @@ main section.planos-section .container {
       
     }
     .planos article a button {
-        background-color: #0BEAEA;
+        background-color: #048181;
         /* cor de fundo */
         color: #FFF;
         /* cor do texto */
@@ -354,16 +354,6 @@ main section.planos-section .container {
         padding-right: 50px;
     }
     
-    small.tag {
-        display: inline-block;
-        border: 1px solid #176902;
-        border-radius: 47px;
-        /* bordas arredondadas */
-        color: #176902;
-        padding: 5px 10px;
-        margin: 10px 0;
-    }
-    
     div.planos h3{
         display: flex;
         justify-content: center; 
@@ -376,7 +366,7 @@ main section.planos-section .container {
 
     /* Forms */
     .container-forms h4{
-        color: #0BEAEA;
+        color: #048181;
         text-align: center;
     }
 
@@ -399,7 +389,7 @@ main section.planos-section .container {
 
     div.col-forms{
         padding: 50px;
-        border: 2px solid #0BEAEA;
+        border: 2px solid #048181;
         border-radius: 15px;
         margin-right: 0px; 
         box-shadow: 0px 0px 3px 3px #d2c8c8;
@@ -407,7 +397,7 @@ main section.planos-section .container {
 
     div.col-forms h4{
         text-align: center;
-        color: #0BEAEA;
+        color: #048181;
 
     }
     .section-forms{
@@ -442,7 +432,7 @@ main section.planos-section .container {
     margin-bottom: 0px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    color: #0BEAEA;
+    color:#048181;
 }
 
 .texto-status-pg{
@@ -452,7 +442,7 @@ main section.planos-section .container {
 
 /* Form da página */
 .div-stauts-pg2{
-    border: 2px solid #0BEAEA;
+    border: 2px solid #0bc1c1;
     padding: 30px;
     display: flex;
     margin: 20px;
@@ -469,7 +459,7 @@ margin: 20px;
 }
 .div-stauts-pg2 form input{
     border-radius: 5px;
-    border: 1px solid #0BEAEA;
+    border: 1px solid #048181;
 }
 
 .div-stauts-pg2 form label{
@@ -487,7 +477,7 @@ margin: 20px;
     width: 100%;
     margin-top: 28px;
     font-weight: bold;
-    background-color: #0BEAEA;
+    background-color:#048181;
     color: #FFF;
 }
 .div-stauts-pg2 form a button:hover{
@@ -517,7 +507,7 @@ margin: 20px;
 /* PAGINA PLANOS */
 
 .container-planos section h1{
-color: #0BEAEA;
+color:#048181;
 }
 
 .container-planos section ul li{
@@ -555,7 +545,7 @@ div.texto-carrossel h2{
     font-size: 20px;
 }
 div.texto-carrossel p{
-    font-size: 10px;
+    font-size: 12px;
 }
 }
 
