@@ -672,4 +672,29 @@ footer div.row div.col-4{
         margin-left: 30px;
     }
 
+    
+}
+
+#nomehelp {
+color: red;
+display: none;
+font-weight: bold;
+}
+
+#cpfhelp {
+color: red;
+display: none; 
+font-weight: bold;   
+}
+
+#telhelp {
+color: red;
+display: none;
+font-weight: bold;   
+}
+
+#emailhelp {
+color: red;
+display: none;
+font-weight: bold;  
 }
