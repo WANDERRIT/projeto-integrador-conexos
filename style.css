@@ -674,10 +674,37 @@ footer div.row div.col-4{
         margin-left: 30px;
     }
 
+    
 }
 
+<<<<<<< HEAD
 #nomeHelp, #cpfHelp, #telHelp, #ajudaEmail {
     color: red;
     display: none;
     font-weight: bold;
 }
+=======
+#nomehelp {
+color: red;
+display: none;
+font-weight: bold;
+}
+
+#cpfhelp {
+color: red;
+display: none; 
+font-weight: bold;   
+}
+
+#telhelp {
+color: red;
+display: none;
+font-weight: bold;   
+}
+
+#emailhelp {
+color: red;
+display: none;
+font-weight: bold;  
+}
+>>>>>>> 9d386bf0669cabe985c874eaa5c18f48abb8f850
