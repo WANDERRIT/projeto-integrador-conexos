@@ -24,11 +24,11 @@
       </li>
 
       <li>
-        <a class="header-A" target="_blank" href="planos.html">Planos </a>
+        <a class="header-A active" target="_blank" href="planos.html">Planos </a>
       </li>
 
       <li>
-        <a class="header-A" target="_blank" href="pagina-status.html">Status de
+        <a class="header-A" target="_blank" href="pagina-status-info.html">Status de
           solicitções</a>
       </li>
     </ul>
@@ -67,41 +67,41 @@
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1" class="font-weight-bold">Nome Completo</label>
-              <input type="text" class="form-control font-weight-bold" id="exampleInputEmail2"
-                aria-describedby="emailHelp" placeholder="Seu Nome Completo">
+              <input type="text" name="name" class="form-control font-weight-bold" id="nomeInput" aria-describedby="emailHelp" placeholder="Seu Nome Completo">
+            <small id="nomehelp"></small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1" class="font-weight-bold">CPF</label>
-              <input type="number" class="form-control font-weight-bold" id="exampleInputPassword2" placeholder="CPF">
+              <input type="number" name="cpf" class="form-control font-weight-bold" id="CPFInput" placeholder="apenas números">
+            <small id="cpfhelp"></small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1" class="font-weight-bold">Telefone para Contato</label>
-              <input type="number" class="form-control font-weight-bold" id="exampleInputPassword1"
-                placeholder="(11)0000000">
+              <input type="text" name="phone" class="form-control font-weight-bold" id="TelInput" placeholder="(11)0000000">
+            <small id="telhelp"></small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1" class="font-weight-bold">Email</label>
-              <input type="email" class="form-control font-weight-bold" id="exampleInputEmail1"
-                aria-describedby="emailHelp" placeholder="Seu email">
-              <small id="emailHelp" class="form-text text-muted font-weight-bold">Nunca vamos compartilhar seu email,
-                com ninguém.</small>
+              <input type="email" name="email" class="form-control font-weight-bold" id="EmailInput" aria-describedby="emailHelp" placeholder="Seu email">
+              <small id="emailHelp" class="form-text text-muted font-weight-bold">Nunca vamos compartilhar seu email, com ninguém.</small>
+            <small id="emailhelp"></small>
             </div>
-            <div class="form-group ">
-              <label for="inputEstado" class="font-weight-bold">Plano</label>
-              <select id="inputPlano" class="form-control font-weight-bold">
-                <option selected class="font-weight-bold">Plano Prime</option>
-                <option class="font-weight-bold">Plano Smart</option>
-                <option class="font-weight-bold">Plano Infinity</option>
-              </select>
-            </div>
-            <div class="form-group ">
-              <label for="inputEstado" class="font-weight-bold">Preferência de horário para visita técnica</label>
-              <select id="inputEstado" class="form-control font-weight-bold">
-                <option selected class="font-weight-bold">8:00 ás 12:00</option>
-                <option class="font-weight-bold">14:00 até 18:00</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+              <div class="form-group ">
+                <label for="inputEstado" class="font-weight-bold">Plano</label>
+                <select id="inputPlano" name="plan" class="form-control font-weight-bold">
+                  <option selected class="font-weight-bold">Plano Infinity</option>
+                  <option class="font-weight-bold">Plano Prime</option>
+                  <option class="font-weight-bold">Plano Smart</option>
+                </select>
+              </div>
+              <div class="form-group ">
+                <label for="inputEstado" class="font-weight-bold">Preferência de horário para visita técnica</label>
+                <select id="inputEstado" name="time" class="form-control font-weight-bold">
+                  <option selected class="font-weight-bold">8:00 às 12:00</option>
+                  <option class="font-weight-bold">14:00 às 18:00</option>
+                </select>
+              </div>
+            <button type="submit" class="btn btn-primary font-weight-bold ">Enviar</button>
           </form>
         </div>
         <!-- aqui estava a col da imagem -->
@@ -131,7 +131,7 @@
             </li>
 
             <li>
-              <a id="footer-hover3" class="footer-A" target="_blank" href="pagina-status.html">Status de
+              <a id="footer-hover3" class="footer-A" target="_blank" href="pagina-status-info.html">Status de
                 solicitções</a>
             </li>
           </ul>
@@ -153,6 +153,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
 </body>
 

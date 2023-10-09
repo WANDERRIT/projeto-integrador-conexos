@@ -1,10 +1,8 @@
-// let statusInfo = document.getElementById('num-solicitacao');
-// let button = document.getElementById('id-button');
+// get element "pagina-status-info.html"
+const statusInfo = document.getElementById('num-solicitacao');
+const button = document.getElementById('id-button');
 
-// button.onclick = function(event){
-//     statusInfo.style.display = "block"
-//     event.preventDefault();
-// }
+//get element "index.html"
 const form = document.querySelector('form');
 const nameInfo = document.getElementById('exampleInputEmail2');
 const emailInfo = document.getElementById('exampleInputEmail1');
@@ -17,7 +15,45 @@ const cpfHelp = document.getElementById('cpfHelp');
 const telHelp = document.getElementById('telHelp');
 const ajudaEmail = document.getElementById('ajudaEmail');
 
+//API método Post async
+form.addEventListener("submit", async () => {
+   
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+  
+    try {
+      const response = await fetch('http://localhost:3000/api/order', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+        
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+  
+      const responseData = await response.json();
+      console.log(responseData);
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
+  });
 
+//display block "pagina-status-info.html"
+const numOrder = document.getElementById('num-solicitacao')
+
+
+button.onclick = function(event) {
+    statusInfo.style.display = "block";
+  event.preventDefault()
+}
+
+
+//regExp validação de email
 function isValidEmail(email) {
     const regExp = new RegExp(
         /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/)
@@ -29,46 +65,7 @@ function isValidEmail(email) {
 
 }
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    if (nameInfo.value.length < 3 || nameInfo === "") {
-        nomeHelp.textContent = "Preencha o nome corretamente"
-        nomeHelp.style.display = "block"
-    } else {
-        nomeHelp.style.display = "none"
-    }
-
-    if (cpflInfo.value.length == false) {
-        cpfHelp.textContent = "campo cpf precisa estar preenchido"
-        cpfHelp.style.display = "block"
-    } else if (cpflInfo.value.length < 11) {
-        cpfHelp.textContent = "cpf precisa ter 11 digitos"
-        cpfHelp.style.display = "block"
-    }
-    else {
-        cpfHelp.style.display = "none"
-    }
-
-
-    if (telInfo.value.length < 9 || telInfo == "") {
-        telHelp.textContent = "O número de telefone precisa ter 9"
-        telHelp.style.display = "block"
-    } else {
-        telHelp.style.display = "none"
-    }
-
-
-    if (emailInfo.value === "" || !isValidEmail(emailInfo.value)) {
-        ajudaEmail.textContent = "Preencha o email corretamente"
-        ajudaEmail.style.display = "block"
-        return;
-    } else { ajudaEmail.style.display = "none" }
-
-    
-    form.submit();
-});
-
+//validação de email
 form.onsubmit = function (event) {
     if (emailInfo.value === "" || !isValidEmail(emailInfo.value)
         || nameInfo === ""||nameInfo.value.length < 3 
@@ -89,6 +86,17 @@ form.onsubmit = function (event) {
 
         alert("favor preencher as informações corretamente");
         event.preventDefault()
+    } else{
+      alert('pedido registrado')
     }
 }
+
+
+
+
+
+
+
+
+
 
