@@ -16,13 +16,9 @@ button.onclick = function (event) {
 fetch('http://localhost:3000/api/order')
   .then((response) => response.json())
   .then((data) => {
-    // Aqui, 'data' conterá todos os IDs dos pedidos
-    // Suponha que a estrutura de dados seja um array de objetos com uma propriedade 'id'
 
     const allOrderIds = data.map((order) => order.id);
 
-    // Agora você pode usar 'allOrderIds' como quiser, por exemplo, em um menu suspenso
-    // para que o usuário selecione o pedido desejado
   })
   .catch((error) => console.error('Erro ao obter IDs dos pedidos:', error));
 
@@ -41,8 +37,7 @@ button.addEventListener('click', (event) => {
                             `;
     }).catch((error) => {
       console.error('Erro ao buscar detalhes do pedido:', error);
-      // Você pode tratar erros aqui, por exemplo, exibindo uma mensagem de erro ao usuário
     });
 
-})
+});
 

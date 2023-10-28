@@ -68,61 +68,88 @@
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1" class="font-weight-bold">Nome Completo</label>
-              <input type="text" name="name" class="form-control font-weight-bold" id="nomeInput" aria-describedby="emailHelp" placeholder="Seu Nome Completo">
-            <small id="nomehelp"></small>
+              <input type="text" name="name" class="form-control font-weight-bold" id="nomeInput"
+                aria-describedby="emailHelp" placeholder="Seu Nome Completo">
+              <small id="nomehelp"></small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1" class="font-weight-bold">CPF</label>
-              <input type="text" name="cpf" class="form-control font-weight-bold" id="CPFInput" placeholder="apenas números">
-            <small id="cpfhelp"></small>
+              <input type="text" name="cpf" class="form-control font-weight-bold" id="CPFInput"
+                placeholder="apenas números" maxlength="14" required>
+              <small id="cpfhelp"></small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1" class="font-weight-bold">Telefone para Contato</label>
-              <input type="text" name="phone" class="form-control font-weight-bold" id="TelInput" placeholder="(11)0000000">
-            <small id="telhelp"></small>
+              <input type="text" name="phone" class="form-control font-weight-bold" id="TelInput"
+                placeholder="(11)0000000" required>
+              <small id="telhelp"></small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1" class="font-weight-bold">Email</label>
-              <input type="email" name="email" class="form-control font-weight-bold" id="EmailInput" aria-describedby="emailHelp" placeholder="Seu email">
-              <small id="emailHelp" class="form-text text-muted font-weight-bold">Nunca vamos compartilhar seu email, com ninguém.</small>
-            <small id="emailhelp"></small>
+              <input type="email" name="email" class="form-control font-weight-bold" id="EmailInput"
+                aria-describedby="emailHelp" placeholder="Seu email" required>
+              <small id="emailHelp" class="form-text text-muted font-weight-bold">Nunca vamos compartilhar seu email,
+                com ninguém.</small>
+              <small id="emailhelp"></small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1" class="font-weight-bold">Cidade e Estado</label>
-              <input type="text" name="adress" class="form-control font-weight-bold" aria-describedby="emailHelp" placeholder="Ex: São Paulo - SP">
+              <input type="text" name="adress" class="form-control font-weight-bold" aria-describedby="emailHelp"
+                placeholder="Ex: São Paulo - SP">
             </div>
 
             <div class="form-group">
               <label for="exampleInputEmail1" class="font-weight-bold">Logradouro</label>
-              <input type="text" name="street" class="form-control font-weight-bold" aria-describedby="emailHelp" placeholder="Ex:R.Augusta">
+              <input type="text" name="street" class="form-control font-weight-bold" aria-describedby="emailHelp"
+                placeholder="Ex:R.Augusta">
             </div>
 
-              <div class="form-group ">
-                <label for="inputEstado" class="font-weight-bold">Plano</label>
-                <select id="inputPlano" name="plan" class="form-control font-weight-bold">
-                  <option selected class="font-weight-bold">Plano Infinity</option>
-                  <option class="font-weight-bold">Plano Prime</option>
-                  <option class="font-weight-bold">Plano Smart</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="font-weight-bold">Preferência de dia para a visita técnica</label>
-                <input type="text" name="service" class="form-control font-weight-bold"  placeholder="EX: 07/07/17">
-              </div>
-              <div class="form-group ">
-                <label for="inputEstado" class="font-weight-bold">Preferência de horário para visita técnica</label>
-                <select id="inputEstado" name="time" class="form-control font-weight-bold">
-                  <option selected class="font-weight-bold">8:00 às 12:00</option>
-                  <option class="font-weight-bold">14:00 às 18:00</option>
-                </select>
-              </div>
-            <button type="submit" class="btn btn-primary font-weight-bold ">Enviar</button>
+            <div class="form-group ">
+              <label for="inputEstado" class="font-weight-bold">Plano</label>
+              <select id="inputPlano" name="plan" class="form-control font-weight-bold">
+                <option selected class="font-weight-bold">Plano Infinity</option>
+                <option class="font-weight-bold">Plano Prime</option>
+                <option class="font-weight-bold">Plano Smart</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="font-weight-bold">Preferência de dia para a visita
+                técnica</label>
+              <input type="text" name="service" class="form-control font-weight-bold" placeholder="EX: 07/07/2017">
+            </div>
+            <div class="form-group ">
+              <label for="inputEstado" class="font-weight-bold">Preferência de horário para visita técnica</label>
+              <select id="inputEstado" name="time" class="form-control font-weight-bold">
+                <option selected class="font-weight-bold">8:00 às 12:00</option>
+                <option class="font-weight-bold">14:00 às 18:00</option>
+              </select>
+            </div>
+            <button type="submit" id="open-modal" class="btn btn-primary font-weight-bold ">Enviar</button>
           </form>
+
+             <!-- modal -->
+      
         </div>
         <!-- aqui estava a col da imagem -->
       </div>
     </div>
+    <!-- modal -->
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2>Dados do seu pedido</h2>
+        <button id="close-modal"  class="btn btn-primary font-weight-bold">Fechar</button>
+      </div>
+      <div  id ="modal-info" class="modal-body">
+        <p>
+          Parece que você não fez nenhum pedido ainda <span>&#128532;</span>
+         </p>
 
+         <p>
+           Que tal contratar o plano Infinity?<span>&#128521;</span>
+         </p>
+      </div>
+    </div>
   </div>
 
   <footer>
